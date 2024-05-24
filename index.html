@@ -2,12 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/img/nav_img.png" />
+    <title>Alef</title>
+    <style>
+      #root{
+        margin-top: 80px;
+      }
+      @media only screen and (max-width: 550px) {
+        #root{
+          margin-top: 60px;
+        }
+      }
+      @media only screen and (max-width: 450px) {
+        #root{
+          margin-top: 50px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
